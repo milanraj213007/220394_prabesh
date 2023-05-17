@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid black;
+        }
+        .dark{
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container dark">
+        <h1>This is heading</h1>
+        <p> ulala ulala chunana chunana metoh zaba hogayi herw mlai samau yo hath nachutos hamro yo samandha </p>
+    </div>
+    <button onclick="lightMode()">Light Mode</button>
+    <button onclick="darkMode()">Dark Mode</button>
+    <script>
+        function lightMode(){
+            document.getElementsByClassName("container")[0].classList.remove('dark');   
+        }
+        function darkMode(){
+            document.getElementsByClassName("container")[0].classList.add('dark');   
+        }
+    </script>
+</body>
+</html>
